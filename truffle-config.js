@@ -62,7 +62,7 @@ module.exports = {
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
     ropsten: {
-      provider: () => new HDWalletProvider(mnemonic, `https://eth-ropsten.alchemyapi.io/v2/sIITR5kqa3X8cKAN0VwY-2aopdIGVeWb`),
+      provider: () => new HDWalletProvider(mnemonic, `https://eth-ropsten.alchemyapi.io/v2/` + alchemyApiKey),
       network_id: 3,       // Ropsten's id
       gas: 5500000,        // Ropsten has a lower block limit than mainnet
       confirmations: 2,    // # of confs to wait between deployments. (default: 0)
